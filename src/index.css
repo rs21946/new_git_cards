@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* h1 {
+    font-size: 100px;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main_block {
+    padding: 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3vw;
+  }
+  
+  .main_block {
+    /* color: white; */
+    background-color: black;
+  }
+  .card {
+    padding: 1vw;
+    width: 30vh;
+    background-color: pink;
+    border-radius: 1vw;
+    transition: all 0.5s;
+  }
+  .card:hover {
+    transform: scale(1.2);
+  }
+  .card img {
+    width: 100%;
+    border-radius: 1vw;
+  }
+  .card h2 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5vw;
+    background-color: red;
+    color: wheat;
+  }
+  @media only screen and (max-width: 705px) {
+    .card {
+      width:90vw;
+    }
+  }

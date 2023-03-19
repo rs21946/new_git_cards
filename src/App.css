@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* h1 {
+    font-size: 100px;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main_block {
+    padding: 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3vw;
+  }
+  
+  .main_block {
+    /* color: white; */
+    background-color: black;
+  }
+  .card {
+    padding: 1vw;
+    width: 30vh;
+    background-color: pink;
+    border-radius: 1vw;
+    transition: all 0.5s;
+  }
+  .card:hover {
+    transform: scale(1.2);
+  }
+  .card img {
+    width: 100%;
+    border-radius: 1vw;
+  }
+  .card h2 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5vw;
+    background-color: red;
+    color: wheat;
+  }
+  .header {
+    width: 100%;
+    background-color: rgb(135, 245, 245);
+    height: 10vh;
+    display: flex;
+    padding: 2vh 4vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header h1 {
+    font-size: 3vw;
+  }
+  .header input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.5px;
+  }
+  .header span {
+    cursor: pointer;
+  }
+  .search_main_block {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .search_main_block .card {
+    height: 40vh;
+  }
+  .not_found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 705px) {
+    .card {
+      width:90vw;
+    }
+    .header input {
+        width: 30vw;
+    }
+    .header h1 {
+        font-size: 4vw;
+    }
+    .search_main_block .card {
+        height: 53vh;
+    }
+  }
